@@ -1,6 +1,6 @@
-# qrcscanner
+# qrscodecanner
 
-A new Flutter application for scan QRCode.
+A new Flutter application.
 
 ## Getting Started
 
