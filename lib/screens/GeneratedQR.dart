@@ -16,13 +16,26 @@ class _GeneratedQRState extends State<GeneratedQR> {
       appBar: AppBar(
         title: Text("Generated QR "),
       ),
-      body: Center(
-        child: QrImage(
-          data: widget.myQR,
-          version: QrVersions.auto,
-          size: 250.0,
-          gapless: false,
-        ),
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: QrImage(
+              data: widget.myQR,
+              version: QrVersions.auto,
+              size: 250.0,
+              gapless: false,
+            ),
+          ),
+          SizedBox(height: 50,),
+          Text(widget.myQR.toString()),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Container(
+                child: Text("You have To take ScreenShot For Future Use",style: TextStyle(fontSize: 15,color: Colors.red),)),
+          )
+        ],
       ),
     );
   }

@@ -25,7 +25,7 @@ class _QRGeneratorState extends State<QRGenerator> {
                 controller: mycontroller,
                 decoration: InputDecoration(
                   errorStyle: TextStyle(color: Colors.red, fontSize: 15.0),
-                  labelText: "Enter the data for generating a QR",
+                  labelText: "Enter the Link for generating a QR",
                   hintStyle: TextStyle(
                     color: Colors.grey,
                     fontSize: 16.0,
@@ -47,7 +47,7 @@ class _QRGeneratorState extends State<QRGenerator> {
                 splashColor: Colors.blue,
                 borderSide: BorderSide(
                   width: 3,
-                  color: Colors.blue,
+                  color: Colors.teal,
                 ),
                 shape: StadiumBorder(),
                 child: Text(
